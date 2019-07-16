@@ -1,0 +1,208 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'segoe';
+    src: url('../font/Segoe UI Symbol.TTF');
+}
+#wrap{}
+.hidden{display:none;}
+.ul{list-style: none;margin: 0;padding: 0;}
+.ul li{margin: 0;padding: 0;}
+
+.transition{
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.transition2{
+    transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+.clearfix {
+        zoom: 1;
+}
+
+.clearfix:after {
+        clear: both;
+        content: " ";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+}
+
+.white{ color: #fff; }
+.b_red{ border: 1px solid red; }
+.b_blue{ border: 1px solid blue; }
+
+.myinput {
+    color: #76552a;
+    border: 1px solid #ccc;
+    line-height: 1.5em;
+    padding: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.btn_xemngay {
+    width: auto;
+    font-weight: bold;
+    padding: 2px 2px;
+    background: #950008;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 29px;
+    border-radius: 6px;
+    outline: none;
+}
+.border{ border: 1px solid #ccc; }
+.inline{ display: flex; }
+
+/********************* desgin *****************/
+
+/** Checkbox **/
+.box-checkcontainer{
+    margin-bottom: 10px; 
+}
+.checkcontainer{ display: block;
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+    height: 13px;
+    margin-right: 5px;
+}
+.checkcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkcontainer input:checked ~ .checkmark {
+    background-color: #00c0ef;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #a7c7d4;
+}
+.checkcontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkcontainer .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkcontainer i{
+    padding-left: 15px;
+}
+/** End **/
+@media only screen and (min-width: 1024px) {
+    
+}
+
+/** Main content **/
+.main-header{ box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);background-color: #4fb8e2; }
+.skin-blue .main-header .navbar { background-color: #4fb8e2;background-image: linear-gradient(120deg, #4fb8e2 0%, #4fb8e2 100%) !important; }
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side{ background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364) !important; }
+.skin-blue .sidebar-menu>li.header{ color: #85eefe;background-image: linear-gradient(to right, #070f13, #203a43, #2c5364) !important; }
+.skin-blue .main-header .logo{ background: none; }
+.treeview-menu>li a{ white-space: nowrap; }
+.jq-toast-wrap{ width: 320px; }
+.login-page{ background: url('https://images.wallpaperscraft.com/image/ocean_coast_aerial_view_131524_1920x1080.jpg');background-size: cover; }
+.login-logo{ font-size: 40px; }
+.login-logo a{ color: #1e4846; }
+.box-header>.fa span, .box-header>.glyphicon span, .box-header>.ion span, .box-header .box-title span{ margin-left: 5px; }
+.box-header .box-title i{ font-size: 15px; }
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th{ text-align: center; }
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th{ /*font-family: 'Roboto Condensed',*/ sans-serif;font-weight: 400;vertical-align: inherit; }
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{ vertical-align: inherit;font-size: 15px; }
+.table thead{ background: #3c8dbc;color: #fff; }
+.box-header{ position: relative; }
+.box-list-head { display: flex; }
+.pull-right { float: right!important; }
+.box-list-head .minibox { margin-left: 5px; }
+.box-pagination{ display: flex;justify-content: flex-end; }
+.pagination { display: inline-block;margin: 1px; }
+.pagination a { color: black;padding: 8px 16px;text-decoration: none;display: inline-block;background: #d7dee05e;border-radius: 4px; }
+.pagination a.active { color: #fff!important;background-color: #f44336!important; }
+
+.justify-content-between { -ms-flex-pack: justify!important;justify-content: space-between!important; }
+.d-flex { display: -ms-flexbox!important;display: flex!important; }
+
+.box-header{ transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out; }
+.fixTop{ position: fixed;top: 0px;left: 0px;width: 100%;background: #4fb8e2;padding-left: 245px;z-index: 101;color: #fff;box-shadow: 1px 1px 5px #487080;border: none !important; }
+.fixTop .btn{ border-color: #fff; }
+.list-control-button{ justify-content: center!important;display: flex; }
+.list-control-button .btn{ margin-right: 3px }
+.list-control-button .btn:last-child{ margin-right: 0px }
+.table thead{ white-space: nowrap; }
+.content-inline{ white-space: nowrap;margin-bottom: 0px; }
+.table-content{ background: url('../images/bg-table-2.jpg');background-position: center center;background-repeat: repeat-y; }
+.modal-content .modal-header{ border-bottom-color: #f4f4f4;background: #1698b9;color: #fff;border: 1px solid #fff; }
+.content-red{ color: #f44336!important; }
+.border-bottom-red{ border-bottom: 1px solid #f64336; }
+
+.box-search-section{ background: #c7e2ec;padding: 8px 5px;border-radius: 4px; }
+.box-search-section .title{ margin: 0px;margin-bottom: 10px;color: #2a4f5e; }
+
+@media only screen and (max-width: 1024px) {
+    .hidden-mobile{ display: none; }
+}
+/** End - Main content**/
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
