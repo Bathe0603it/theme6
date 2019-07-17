@@ -61,6 +61,8 @@
 }
 .border{ border: 1px solid #ccc; }
 .inline{ display: flex; }
+.flex-center{ display: flex;justify-content: center; }
+.flex-right{ display: flex;justify-content: flex-end; }
 
 /********************* desgin *****************/
 
@@ -88,6 +90,9 @@
 }
 .checkcontainer input:checked ~ .checkmark {
     background-color: #00c0ef;
+}
+.checkcontainer input:disabled ~ .checkmark {
+    background-color: #ccc;
 }
 .checkmark {
     position: absolute;
