@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--
+    This is a starter template page. Use this page to start your new project from
+    scratch. This page gets rid of all links and provides the needed markup only.
+    -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AdminConek 2 | Starter</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="stylesheet" href="templates/AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="templates/AdminLTE/bower_components/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="templates/AdminLTE/bower_components/Ionicons/css/ionicons.min.css">
+
+        <!-- CSS JOIN -->
+        <link rel="stylesheet" href="templates/AdminLTE/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <!-- END -->
+        
+        <!-- Theme style -->
+        <link rel="stylesheet" href="templates/AdminLTE/dist/css/AdminLTE.min.css">
+        <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+            page. However, you can choose any other skin. Make sure you
+            apply the skin class to the body tag so the changes take effect. -->
+        <link rel="stylesheet" href="templates/AdminLTE/dist/css/skins/skin-blue.min.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Toas plugin -->
+        <link rel="stylesheet" href="plugins/jquery-toast-plugin-master/dist/jquery.toast.min.css">
+        <!-- End -->
+
+        <!-- Google Font -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,400italic,700' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/global-style.css">
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini cpn-iframe">
+        <div class="wrapper">
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <!-- Main content -->
+                <section class="content container-fluid">
+                    <div class="box box-primary color-palette-box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Thêm chi tiết nhóm dịch vụ</span></h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-map-marker"></i>
+                                                    </div>
+                                                    <select class="form-control">
+                                                        <option disabled="">Chọn spa</option>
+                                                        <option value="1">Spa Hoàng Quốc Việt</option>
+                                                    </select>
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-barcode"></i>
+                                                    </div>
+                                                    <input type="" class="form-control" name="" placeholder="Nhập tên nhóm dịch vụ">
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-pencil-square-o"></i>
+                                                    </div>
+                                                    <input type="" class="form-control" name="" placeholder="Nhập chiết khấu">
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-pencil-square-o"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="pwd" placeholder="Mã nhóm dịch vụ">
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-pencil-square-o"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control" id="pwd" placeholder="Nhập giá">
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-pencil-square-o"></i>
+                                                    </div>
+                                                    <textarea class="form-control" placeholder="Mô tả dịch vụ"></textarea>
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-success btn-sm "><i class="fa fa-plus-square"></i> Cập nhập</button>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary color-palette-box">
+                        <div class="box-header with-border box-header-main">
+                            <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách chi tiết nhóm dịch vụ</span></h3>
+                            <div class="pull-right box-list-head">
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-success pull-left btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square"></i> Thêm mới</a>
+                                </div>
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-danger pull-left btn-sm"><i class="fa fa-trash-o"></i> Xóa</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-body table-responsive no-padding">
+                            <table class="table table-hover table-bordered table-condensed table-content">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </th>
+                                        <th>STT</th>
+                                        <th>Mã nhóm dịch vụ</th>
+                                        <th>Tên nhóm dịch vụ</th>
+                                        <th>Giá</th>
+                                        <th>Chiết khấu (%)</th>
+                                        <th>Mô tả dịch vụ</th>
+                                        <th>Control</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">CSD</span></td>
+                                        <td>Chăm sóc da</td>
+                                        <td><p class="content-inline">2.000.000</p></td>
+                                        <td>50%</td>
+                                        <th>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</th>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">CSD</span></td>
+                                        <td>Chăm sóc da</td>
+                                        <td><p class="content-inline">2.000.000</p></td>
+                                        <td>50%</td>
+                                        <th>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</th>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">CSD</span></td>
+                                        <td>Chăm sóc da</td>
+                                        <td><p class="content-inline">2.000.000</p></td>
+                                        <td>50%</td>
+                                        <th>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</th>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <section class="d-flex justify-content-between">
+                                <div class="box-select-pagination">
+                                    <div class="form-inline">
+                                        <label>Số bản ghi/Trang: </label>&nbsp
+                                        <select class="form-control">
+                                            <option value="">20 bản ghi</option>
+                                            <option value="">30 bản ghi</option>
+                                            <option value="">50 bản ghi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="box-pagination">
+                                    <div class="pagination">
+                                        <a href="#">&laquo;</a>
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">&raquo;</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
+                </section>
+                <!-- /.content -->
+            </div>
+            <div class="render">
+                <form class="form-horizontal" action="">
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">CHI TIẾT NHÓM DỊCH VỤ</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="email">Nhóm dịch vụ <i class="content-red">(*)</i>:</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" id="email" placeholder="Chi nhánh">
+                                                <option value="" selected="">Nhóm dịch vụ</option>
+                                                <option value="">Nhóm dịch vụ 1</option>
+                                                <option value="">Nhóm dịch vụ 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="pwd">Tên dịch vụ <i class="content-red">(*)</i>:</label>
+                                        <div class="col-sm-9"> 
+                                            <input type="" class="form-control" name="" placeholder="Nhập tên dịch vụ">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="pwd">Giá:</label>
+                                        <div class="col-sm-3"> 
+                                            <input type="text" class="form-control" id="pwd" placeholder="Nhập giá">
+                                        </div>
+                                        <label class="control-label col-sm-3" for="pwd">Chiết khấu:</label>
+                                        <div class="col-sm-3"> 
+                                            <input type="" class="form-control" name="" placeholder="Nhập chiết khấu">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="pwd">Loại khoảng cách:</label>
+                                        <div class="col-sm-3"> 
+                                            <select class="form-control">
+                                                <option>Ngày</option>
+                                                <option>Tuần</option>
+                                                <option>Tháng</option>
+                                            </select>
+                                        </div>
+                                        <label class="control-label col-sm-3" for="pwd">Khoảng cách:</label>
+                                        <div class="col-sm-3"> 
+                                            <input type="" class="form-control" name="" placeholder="Nhập khoảng cách">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="pwd">Thời gian thực hiện:</label>
+                                        <div class="col-sm-3"> 
+                                            <input type="text" class="form-control" id="pwd" placeholder="Nhập thời gian thực hiện(phút)">
+                                        </div>
+                                        <label class="control-label col-sm-3" for="pwd">Thứ tự:</label>
+                                        <div class="col-sm-3"> 
+                                            <input type="" class="form-control" name="" placeholder="Nhập thứ tự">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" for="pwd">Mô tả dịch vụ:</label>
+                                        <div class="col-sm-9"> 
+                                            <textarea class="form-control" placeholder="Mô tả dịch vụ"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-plus"></i>&nbspThêm</button>
+                                    <button type="reset" class="btn btn-warning"><i class="fa fa-refresh"></i>&nbspNhập lại</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>&nbspClose</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- ./wrapper -->
+        <!-- REQUIRED JS SCRIPTS -->
+        <!-- jQuery 3 -->
+        <script src="templates/AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="templates/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="templates/AdminLTE/dist/js/adminlte.min.js"></script>
+        <script src="templates/AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="plugins/jquery-toast-plugin-master/dist/jquery.toast.min.js"></script>
+
+        <script src="js/function.js"></script>
+        <!-- JS JOIN -->
+        <script src="templates/AdminLTE/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <!-- END -->
+        <script type="text/javascript">
+            //Date picker
+            $('#datepicker').datepicker({
+                autoclose: true
+            })
+        </script>
+    </body>
+</html>
