@@ -388,7 +388,7 @@
                 <section class="content container-fluid">
                     <div class="box box-primary color-palette-box">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Lọc danh sách khách hàng và gửi sms</span></h3>
+                            <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Tùy biến gửi sms</span></h3>
                         </div>
                         <div class="box-body">
                             <div class="row">
@@ -416,14 +416,25 @@
                                                     <div class="form-group">
                                                         <div class="input-group">
                                                             <div class="input-group-addon">
-                                                                <i class="fa fa-inbox"></i>
+                                                                <i class="fa fa-map-marker"></i>
                                                             </div>
                                                             <select class="form-control">
-                                                                <option disabled="">Chọn mẫu tin</option>
-                                                                <option value="1">Mẫu tin 1</option>
-                                                                <option value="1">Mẫu tin 2</option>
+                                                                <option disabled="">Chọn spa</option>
+                                                                <option value="1">Spa Hoàng Quốc Việt</option>
                                                             </select>
                                                         </div>
+                                                        <!-- /.input group -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <div class="form-group inline">
+                                                        <div class="input-group">
+                                                            <div class="input-group-addon">
+                                                                <i class="fa fa-file"></i>
+                                                            </div>
+                                                            <input type="file" class="form-control" placeholder="Nhập mã khách hàng">
+                                                        </div>&nbsp
+                                                        <button class="btn btn-primary btn-sm"><i class="fa fa-upload"></i> Tải lên</button>
                                                         <!-- /.input group -->
                                                     </div>
                                                 </div>
@@ -441,15 +452,6 @@
                                                 </div>
                                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                                     <div class="row">
-                                                        <div class="col-md-3 col-sm-12">
-                                                            <div class="box-checkcontainer">
-                                                                <label class="checkcontainer">
-                                                                    <input type="checkbox">
-                                                                    <span class="checkmark"></span>
-                                                                    <i>Chèn thêm</i>
-                                                                </label>
-                                                            </div>
-                                                        </div>
                                                         <div class="col-md-8 col-sm-12">
                                                             <div class="row">
                                                                 <div class="col-md-4 col-sm-4 col-xs-6">
@@ -482,8 +484,8 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-3">
-                                                    <button class="btn btn-primary btn-sm"><i class="fa fa-clipboard"></i> Copy</button>
-                                                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</button>
+                                                    <button class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Tạo tin</button>
+                                                    <a href="#" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square"></i> Tải file mẫu</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -500,16 +502,7 @@
                             <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách khách hàng</span></h3>
                             <div class="pull-right box-list-head">
                                 <div class="minibox">
-                                    <a href="#" class="btn btn-success pull-left btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square"></i> Gửi SMS</a>
-                                </div>
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-danger pull-left btn-sm"><i class="fa fa-paper-plane"></i> Gửi toàn danh sách</a>
-                                </div>
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-keyboard-o"></i> Gửi sms tùy biến</a>
-                                </div>
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-upload"></i> Export Excel</a>
+                                    <a href="#" class="btn btn-warning pull-left btn-sm"><i class="fa fa-paper-plane"></i> Gửi sms</a>
                                 </div>
                             </div>
                         </div>
