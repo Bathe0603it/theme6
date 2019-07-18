@@ -124,6 +124,7 @@
 .checkcontainer i{
     padding-left: 15px;
 }
+.center-all{ display: -moz-box;display: -webkit-box;-moz-box-align: center;-moz-box-pack: center;-webkit-box-align: center;-webkit-box-pack: center; }
 /** End **/
 @media only screen and (min-width: 1024px) {
     

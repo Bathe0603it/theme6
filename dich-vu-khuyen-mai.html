@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="templates/AdminLTE/bower_components/Ionicons/css/ionicons.min.css">
 
         <!-- CSS JOIN -->
-        <link rel="stylesheet" href="templates/AdminLTE/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="templates/AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.css">
         <!-- END -->
         
         <!-- Theme style -->
@@ -374,12 +374,12 @@
                 <section class="content-header">
                     <h1>
                         Dịch vụ
-                        <small>Thông tin dịch vụ</small>
+                        <small>Danh sách dịch vụ khuyến mãi</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#"><i class="fa fa-dashboard"></i> Quản lý dịch vụ</a></li>
-                        <li class="active">Thông tin dịch vụ</li>
+                        <li class="active">Danh sách dịch vụ khuyến mãi</li>
                     </ol>
                 </section>
                 <!-- Main content -->
@@ -404,63 +404,27 @@
                                         <!-- /.input group -->
                                     </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-server"></i>
+                                                <i class="fa fa-bell-o"></i>
                                             </div>
-                                            <select class="form-control">
-                                                <option disabled="" selected="">Chọn nhóm dịch vụ</option>
-                                                <option value="1">Tắm trắng</option>
-                                                <option value="1">Tắm trắng</option>
-                                                <option value="1">Tắm trắng</option>
-                                            </select>
+                                            <input type="text" class="form-control" placeholder="Nhập tên chương trình">
                                         </div>
                                         <!-- /.input group -->
                                     </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-address-card"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Nhập tên dịch vụ">
+                                            <input type="text" class="form-control pull-right" id="reservation">
                                         </div>
                                         <!-- /.input group -->
                                     </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="row">
-                                        <div class="col-md-12 inline">
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                        <i class="fa fa-address-card"></i>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="Từ giá">
-                                                </div>
-                                                <!-- /.input group -->
-                                            </div>
-                                            <div class="form-group center-all">
-                                                <i class="fa fa-long-arrow-right"></i>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                        <i class="fa fa-address-card"></i>
-                                                    </div>
-                                                    <input type="text" class="form-control" placeholder="Đến giá">
-                                                </div>
-                                                <!-- /.input group -->
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5">
-                                            
-                                        </div>
-                                    </div>
-                                    
                                 </div>
                                 
                                 <div class="col-md-3">
@@ -473,16 +437,13 @@
                     </div>
                     <div class="box box-primary color-palette-box">
                         <div class="box-header with-border box-header-main">
-                            <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách dịch vụ chi tiết</span></h3>
+                            <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách khách hàng</span></h3>
                             <div class="pull-right box-list-head">
                                 <div class="minibox">
                                     <a href="#" class="btn btn-success pull-left btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square"></i> Thêm mới</a>
                                 </div>
                                 <div class="minibox">
                                     <a href="#" class="btn btn-danger pull-left btn-sm"><i class="fa fa-trash-o"></i> Xóa</a>
-                                </div>
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-download"></i> Import Excel</a>
                                 </div>
                                 <div class="minibox">
                                     <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-upload"></i> Export Excel</a>
@@ -493,99 +454,52 @@
                             <table class="table table-hover table-bordered table-condensed table-content">
                                 <thead>
                                     <tr>
-                                        <td>
+                                        <th>
                                             <label class="checkcontainer">
                                                 <input type="checkbox" checked="checked">
                                                 <span class="checkmark"></span>
                                             </label>
-                                        </td>
-                                        <td>STT</td>
-                                        <td>Dịch vụ</td>
-                                        <td>Dịch vụ chi tiết</td>
-                                        <td>Giá</td>
-                                        <td>Chiết khấu (%)</td>
-                                        <td>Thời gian thực hiện(phút)</td>
-                                        <td>Thứ tự</td>
-                                        <td>Mô tả dịch vụ</td>
-                                        <td>Control</td>
+                                        </th>
+                                        <th>STT</th>
+                                        <th>Chương trình khuyến mại</th>
+                                        <th>Ngày bắt đầu</th>
+                                        <th>Ngày kết thúc</th>
+                                        <th>Tiền tố</th>
+                                        <th>Tổng Coupon</th>
+                                        <th>Đã gửi</th>
+                                        <th>Còn lại</th>
+                                        <th>Ghi chú</th>
+                                        <th>KM Coupon</th>
+                                        <th>Control</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="1" rowspan="3">
+                                        <td>
                                             <label class="checkcontainer">
-                                                <input type="checkbox" checked="checked">
+                                                <input type="checkbox">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </td>
-                                        <td colspan="1" rowspan="3">
-                                        <p>1</p>
-                                        </td>
-                                        <td colspan="1" rowspan="3">
-                                        <p>Tắm trắng</p>
-                                        </td>
-                                        <td>tắm trắng 1</td>
-                                        <td>600</td>
-                                        <td>&nbsp;</td>
-                                        <td>90</td>
-                                        <td>13</td>
-                                        <td>&nbsp;</td>
-                                        <td colspan="1" rowspan="3">
+                                        <td>183</td>
+                                        <td><span class="label label-success">Chào xuân</span></td>
+                                        <td>11-7-2014</td>
+                                        <td>11-7-2014</td>
+                                        <th>SPA</th>
+                                        <th>5</th>
+                                        <th>1</th>
+                                        <td>3</td>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <td>
                                             <section class="list-control-button">
                                                 <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
                                             </section>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>tắm trắng 2</td>
-                                        <td>1,500,000</td>
-                                        <td>&nbsp;</td>
-                                        <td>150</td>
-                                        <td>14</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td>tắm trắng 3</td>
-                                        <td>1,000,000</td>
-                                        <td>&nbsp;</td>
-                                        <td>50</td>
-                                        <td>15</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="1" rowspan="2">
-                                            <label class="checkcontainer">
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td colspan="1" rowspan="2">
-                                        <p>2</p>
-                                        </td>
-                                        <td colspan="1" rowspan="2">
-                                        <p>Trị mụn</p>
-                                        </td>
-                                        <td>trị mụn 1</td>
-                                        <td>700</td>
-                                        <td>&nbsp;</td>
-                                        <td>50</td>
-                                        <td>16</td>
-                                        <td>&nbsp;</td>
-                                        <td colspan="1" rowspan="3">
+                                        <th>
                                             <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
                                                 <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
                                             </section>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>trị mụn 2</td>
-                                        <td>1,100,000</td>
-                                        <td>&nbsp;</td>
-                                        <td>70</td>
-                                        <td>17</td>
-                                        <td>&nbsp;</td>
+                                        </th>
                                     </tr>
                                 </tbody>
                             </table>
@@ -630,65 +544,83 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">CHI TIẾT NHÓM DỊCH VỤ</h4>
+                                    <h4 class="modal-title">USSD SPA - CHI TIẾT CHƯƠNG TRÌNH KHUYẾN MÃI</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-3" for="email">Nhóm dịch vụ <i class="content-red">(*)</i>:</label>
-                                        <div class="col-sm-9">
-                                            <select class="form-control" id="email" placeholder="Chi nhánh">
-                                                <option value="" selected="">Nhóm dịch vụ</option>
-                                                <option value="">Nhóm dịch vụ 1</option>
-                                                <option value="">Nhóm dịch vụ 2</option>
-                                            </select>
+                                    
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="email">Chi nhánh:</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" id="email" placeholder="Chi nhánh">
+                                                    <option value="">Hoàng Quốc Việt</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-3" for="pwd">Tên dịch vụ <i class="content-red">(*)</i>:</label>
-                                        <div class="col-sm-9"> 
-                                            <input type="" class="form-control" name="" placeholder="Nhập tên dịch vụ">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Loại khách hàng:</label>
+                                            <div class="col-sm-9"> 
+                                                <select class="form-control" id="email" placeholder="Loại khách hàng">
+                                                    <option value="">Loại khách hàng 1</option>
+                                                    <option value="">Loại khách hàng 2</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-3" for="pwd">Giá:</label>
-                                        <div class="col-sm-3"> 
-                                            <input type="text" class="form-control" id="pwd" placeholder="Nhập giá">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Tiêu đề:</label>
+                                            <div class="col-sm-9"> 
+                                                <input type="text" class="form-control" id="pwd" placeholder="Nhập nội dung" disabled="">
+                                            </div>
                                         </div>
-                                        <label class="control-label col-sm-3" for="pwd">Chiết khấu:</label>
-                                        <div class="col-sm-3"> 
-                                            <input type="" class="form-control" name="" placeholder="Nhập chiết khấu">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Thời gian:</label>
+                                            <div class="col-sm-9"> 
+                                                <div class="input-group date">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control pull-right" id="reservation1">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-3" for="pwd">Loại khoảng cách:</label>
-                                        <div class="col-sm-3"> 
-                                            <select class="form-control">
-                                                <option>Ngày</option>
-                                                <option>Tuần</option>
-                                                <option>Tháng</option>
-                                            </select>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Loại giảm giá:</label>
+                                            <div class="col-sm-3"> 
+                                                <div class="input-group date">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-archive"></i>
+                                                    </div>
+                                                    <select class="form-control" id="email" placeholder="Loại giảm giá">
+                                                        <option value="">Loại gg</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <label class="control-label col-sm-3 col-md-2" for="pwd">Chiết khấu %:</label>
+                                            <div class="col-sm-3"> 
+                                                <input type="text" class="form-control pull-right">
+                                            </div>
                                         </div>
-                                        <label class="control-label col-sm-3" for="pwd">Khoảng cách:</label>
-                                        <div class="col-sm-3"> 
-                                            <input type="" class="form-control" name="" placeholder="Nhập khoảng cách">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Số lượng coupon:</label>
+                                            <div class="col-sm-3"> 
+                                                <div class="input-group date">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-line-chart"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control pull-right" placeholder="Nhập số lượng">
+                                                </div>
+                                            </div>
+                                            <label class="control-label col-sm-3 col-md-2" for="pwd">Tiền tố:</label>
+                                            <div class="col-sm-3"> 
+                                                <input type="text" class="form-control pull-right" placeholder="Nhập tiền tố">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-3" for="pwd">Thời gian thực hiện:</label>
-                                        <div class="col-sm-3"> 
-                                            <input type="text" class="form-control" id="pwd" placeholder="Nhập thời gian thực hiện(phút)">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Ghi chú:</label>
+                                            <div class="col-sm-9"> 
+                                                <textarea class="form-control" id="pwd"></textarea>
+                                            </div>
                                         </div>
-                                        <label class="control-label col-sm-3" for="pwd">Thứ tự:</label>
-                                        <div class="col-sm-3"> 
-                                            <input type="" class="form-control" name="" placeholder="Nhập thứ tự">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-sm-3" for="pwd">Mô tả dịch vụ:</label>
-                                        <div class="col-sm-9"> 
-                                            <textarea class="form-control" placeholder="Mô tả dịch vụ"></textarea>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-plus"></i>&nbspThêm</button>
@@ -808,13 +740,21 @@
 
         <script src="js/function.js"></script>
         <!-- JS JOIN -->
-        <script src="templates/AdminLTE/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <script src="templates/AdminLTE/bower_components/moment/min/moment.min.js"></script>
+        <script src="templates/AdminLTE/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
         <!-- END -->
         <script type="text/javascript">
-            //Date picker
-            $('#datepicker').datepicker({
-                autoclose: true
-            })
+            //Date range picker
+            $('#reservation').daterangepicker({
+                locale: {
+                    format: 'DD-MM-YYYY'
+                }
+            });
+            $('#reservation1').daterangepicker({
+                locale: {
+                    format: 'DD-MM-YYYY'
+                }
+            });
         </script>
     </body>
 </html>
