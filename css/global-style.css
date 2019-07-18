@@ -125,6 +125,8 @@
     padding-left: 15px;
 }
 .center-all{ display: -moz-box;display: -webkit-box;-moz-box-align: center;-moz-box-pack: center;-webkit-box-align: center;-webkit-box-pack: center; }
+.content-right{ text-align: right; }
+.margin-bottom-10{ margin-bottom: 10px; }
 /** End **/
 @media only screen and (min-width: 1024px) {
     
