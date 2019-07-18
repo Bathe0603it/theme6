@@ -373,435 +373,192 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Danh sách
-                        <small>Danh sách khách hàng</small>
+                        Cài đặt
+                        <small>Hồ sơ khách hàng</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Quản lý khách hàng</a></li>
-                        <li class="active">Danh sách khách hàng</li>
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Cài đặt</a></li>
+                        <li class="active">Hồ sơ khách hàng</li>
                     </ol>
                 </section>
                 <!-- Main content -->
                 <section class="content container-fluid">
                     <div class="box box-primary color-palette-box">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Lọc danh sách khách hàng</span></h3>
+                            <h3 class="box-title"><i class="fa fa-id-badge"></i> <span class="">Quản lý SPA</span></h3>
                         </div>
                         <div class="box-body">
                             <div class="row">
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-user"></i>
+                                <div class="col-md-9 col-md-offset-1">
+                                    <form class="form-horizontal" action="">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Mã Spa <i class="content-red">(*)</i>:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-address-card"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Nhập tên khách hàng">
-                                        </div>
-                                        <!-- /.input group -->
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-address-card"></i>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Người đại diện:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-address-card"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="datepicker">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Nhập mã khách hàng">
                                         </div>
-                                        <!-- /.input group -->
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-map-marker"></i>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Tên Spa <i class="content-red">(*)</i>:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
                                             </div>
-                                            <select class="form-control">
-                                                <option disabled="">Chọn spa</option>
-                                                <option value="1">Spa Hoàng Quốc Việt</option>
-                                            </select>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Ngày thành lập:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-address-card"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="datepicker">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
                                         </div>
-                                        <!-- /.input group -->
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <button class="btn btn-primary btn-sm "><i class="fa fa-search"></i> Tìm kiếm</button>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Địa chỉ:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Trạng thái:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-address-card"></i>
+                                                        </div>
+                                                        <div class="inline">
+                                                            <select class="form-control">
+                                                                <option>Hoạt động</option>
+                                                                <option>Hoạt động</option>
+                                                            </select>
+                                                            &nbsp&nbsp&nbsp
+                                                            <label class="checkcontainer">
+                                                                <i class="content-inline">Đăng ký SMS</i>
+                                                                <input type="checkbox" checked="checked">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">SĐT:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Tổng tin cấp:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-address-card"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Email:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Tổng tin đã sử dụng:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-address-card"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-5 content-inline" for="email">Website:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Nhập mã">
+                                                    </div>
+                                                    <!-- /.input group -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                             <!-- /.row -->
                         </div>
                         <!-- /.box-body -->
                     </div>
-                    <div class="box box-primary color-palette-box">
-                        <div class="box-header with-border box-header-main">
-                            <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách khách hàng</span></h3>
-                            <div class="pull-right box-list-head">
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-success pull-left btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square"></i> Thêm mới</a>
-                                </div>
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-danger pull-left btn-sm"><i class="fa fa-trash-o"></i> Xóa</a>
-                                </div>
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-download"></i> Import Excel</a>
-                                </div>
-                                <div class="minibox">
-                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-upload"></i> Export Excel</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-body table-responsive no-padding">
-                            <table class="table table-hover table-bordered table-condensed table-content">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </th>
-                                        <th>STT</th>
-                                        <th>Tên KH</th>
-                                        <th>Ngày sinh</th>
-                                        <th>Giới tính</th>
-                                        <th>SDT</th>
-                                        <th>Email</th>
-                                        <th>Địa chỉ</th>
-                                        <th>Ghi chú</th>
-                                        <th>Control</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td><p class="content-inline">11-7-2014</p></td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td><p class="content-inline">11-7-2014</p></td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td><p class="content-inline">11-7-2014</p></td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td>11-7-2014</td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td>11-7-2014</td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td>11-7-2014</td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td>11-7-2014</td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td>11-7-2014</td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="checkcontainer">
-                                                <input type="checkbox" checked="checked">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </td>
-                                        <td>183</td>
-                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
-                                        <td>11-7-2014</td>
-                                        <td>Nam</td>
-                                        <th>0985135999</th>
-                                        <th>bathe0603it@gmail.com</th>
-                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
-                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        <th>
-                                            <section class="list-control-button">
-                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
-                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
-                                            </section>
-                                        </th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer">
-                            <section class="d-flex justify-content-between">
-                                <div class="box-select-pagination">
-                                    <div class="form-inline">
-                                        <label>Số bản ghi/Trang: </label>&nbsp
-                                        <select class="form-control">
-                                            <option value="">20 bản ghi</option>
-                                            <option value="">30 bản ghi</option>
-                                            <option value="">50 bản ghi</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="box-pagination">
-                                    <div class="pagination">
-                                        <a href="#">&laquo;</a>
-                                        <a href="#" class="active">1</a>
-                                        <a href="#">2</a>
-                                        <a href="#">3</a>
-                                        <a href="#">4</a>
-                                        <a href="#">5</a>
-                                        <a href="#">6</a>
-                                        <a href="#">&raquo;</a>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <!-- /.box-footer -->
-                    </div>
                 </section>
                 <!-- /.content -->
             </div>
             <div class="render">
-                <form class="form-horizontal" action="">
-                    <div id="myModal" class="modal fade" role="dialog">
-                        <div class="modal-dialog modal-lg">
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">USSD SPA - THÊM MỚI KHÁCH HÀNG</h4>
-                                </div>
-                                <div class="modal-body">
-                                    
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="email">Chi nhánh:</label>
-                                            <div class="col-sm-9">
-                                                <select class="form-control" id="email" placeholder="Chi nhánh">
-                                                    <option value="">Hoàng Quốc Việt</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Loại khách hàng:</label>
-                                            <div class="col-sm-9"> 
-                                                <select class="form-control" id="email" placeholder="Loại khách hàng">
-                                                    <option value="">Loại khách hàng 1</option>
-                                                    <option value="">Loại khách hàng 2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Mã khách hàng:</label>
-                                            <div class="col-sm-9"> 
-                                                <input type="text" class="form-control" id="pwd" placeholder="" disabled="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Tên khách hàng:</label>
-                                            <div class="col-sm-9"> 
-                                                <input type="text" class="form-control" id="pwd" placeholder="Tên khách hàng">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Ngày sinh:</label>
-                                            <div class="col-sm-3"> 
-                                                <div class="input-group date">
-                                                    <div class="input-group-addon">
-                                                        <i class="fa fa-calendar"></i>
-                                                    </div>
-                                                    <input type="text" class="form-control pull-right" id="datepicker">
-                                                </div>
-                                            </div>
-                                            <label class="control-label col-sm-3 col-md-2" for="pwd">Giới tính:</label>
-                                            <div class="col-sm-3"> 
-                                                <select class="form-control" id="email" placeholder="Loại khách hàng">
-                                                    <option value="">Nam</option>
-                                                    <option value="">Nữ</option>
-                                                    <option value="">Giới tính khác</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Số ĐT:</label>
-                                            <div class="col-sm-9"> 
-                                                <input type="text" class="form-control" id="pwd" placeholder="Số ĐT">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Email:</label>
-                                            <div class="col-sm-9"> 
-                                                <input type="text" class="form-control" id="pwd" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Địa chỉ:</label>
-                                            <div class="col-sm-9"> 
-                                                <input type="text" class="form-control" id="pwd" placeholder="Địa chỉ">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-sm-3" for="pwd">Ghi chú:</label>
-                                            <div class="col-sm-9"> 
-                                                <textarea class="form-control" id="pwd"></textarea>
-                                            </div>
-                                        </div>
-                                    
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-plus"></i>&nbspThêm</button>
-                                    <button type="reset" class="btn btn-warning"><i class="fa fa-refresh"></i>&nbspNhập lại</button>
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>&nbspClose</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                
             </div>
             <!-- /.content-wrapper -->
             <!-- Main Footer -->
