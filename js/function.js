@@ -3,6 +3,10 @@ $(document).ready(function(){
         t = parseInt($(window).scrollTop());
         t>100?$('.box-header-main').addClass('fixTop'):$('.box-header-main').removeClass('fixTop');
     });
+
+    if (screen.width >= 768 && screen.width < 900) {
+        $('.sidebar-mini').addClass('sidebar-collapse');
+    }
 });
 function show_toast_success(){
     $.toast({

@@ -41,6 +41,7 @@
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,400italic,700' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="css/global-style.css">
+        <link rel="stylesheet" href="css/response.css">
     </head>
     <!--
         BODY TAG OPTIONS:
@@ -383,14 +384,14 @@
                     </ol>
                 </section>
                 <!-- Main content -->
-                <section class="content container-fluid">
+                <section class="content container-fluid contain-main contain-dskh">
                     <div class="box box-primary color-palette-box">
                         <div class="box-header with-border">
                             <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Lọc danh sách khách hàng</span></h3>
                         </div>
                         <div class="box-body">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
@@ -401,7 +402,7 @@
                                         <!-- /.input group -->
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
@@ -412,7 +413,7 @@
                                         <!-- /.input group -->
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
@@ -426,7 +427,7 @@
                                         <!-- /.input group -->
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
                                     <button class="btn btn-primary btn-sm "><i class="fa fa-search"></i> Tìm kiếm</button>
                                 </div>
                             </div>
@@ -453,7 +454,7 @@
                             </div>
                         </div>
                         <div class="box-body table-responsive no-padding">
-                            <table class="table table-hover table-bordered table-condensed table-content">
+                            <table class="table table-hover table-bordered table-condensed table-content table-main">
                                 <thead>
                                     <tr>
                                         <th>
@@ -677,7 +678,7 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer">
-                            <section class="d-flex justify-content-between">
+                            <section class="d-flex justify-content-between box-footer-main">
                                 <div class="box-select-pagination">
                                     <div class="form-inline">
                                         <label>Số bản ghi/Trang: </label>&nbsp
@@ -696,7 +697,6 @@
                                         <a href="#">3</a>
                                         <a href="#">4</a>
                                         <a href="#">5</a>
-                                        <a href="#">6</a>
                                         <a href="#">&raquo;</a>
                                     </div>
                                 </div>
@@ -750,7 +750,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-sm-3" for="pwd">Ngày sinh:</label>
-                                            <div class="col-sm-3"> 
+                                            <div class="col-sm-4"> 
                                                 <div class="input-group date">
                                                     <div class="input-group-addon">
                                                         <i class="fa fa-calendar"></i>
@@ -758,7 +758,7 @@
                                                     <input type="text" class="form-control pull-right" id="datepicker">
                                                 </div>
                                             </div>
-                                            <label class="control-label col-sm-3 col-md-2" for="pwd">Giới tính:</label>
+                                            <label class="control-label col-sm-2 col-md-2" for="pwd">Giới tính:</label>
                                             <div class="col-sm-3"> 
                                                 <select class="form-control" id="email" placeholder="Loại khách hàng">
                                                     <option value="">Nam</option>
@@ -916,7 +916,8 @@
         <script type="text/javascript">
             //Date picker
             $('#datepicker').datepicker({
-                autoclose: true
+                autoclose: true,
+                format: 'dd-mm-yyyy'
             })
         </script>
     </body>

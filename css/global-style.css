@@ -178,9 +178,37 @@ iframe{ border: none; }
 .modal-content .modal-header{ border-bottom-color: #f4f4f4;background: #1698b9;color: #fff;border: 1px solid #fff; }
 .content-red{ color: #f44336!important; }
 .border-bottom-red{ border-bottom: 1px solid #f64336; }
+.table-hover>tbody>tr{ transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out; }
+.table-hover>tbody>tr:hover{ background-color: #00c0ef38; }
 
 .box-search-section{ background: #c7e2ec;padding: 8px 5px;border-radius: 4px; }
 .box-search-section .title{ margin: 0px;margin-bottom: 10px;color: #2a4f5e; }
+.alert-warning-sub{ -webkit-animation: message_hethang 1s infinite;-moz-animation: message_hethang 1s infinite;-o-animation: message_hethang 1s infinite;animation: message_hethang 1s infinite; }
+@keyframes message_hethang {
+    0% {
+        background-color: #9c2121;
+    }
+    90% {
+        
+    }
+}
+
+/** Sigle form **/
+.contain-main{  }
+.contain-main .table-main{ min-width: 1200px; }
+.contain-dskh{  }
+.contain-dskh .table-main{ min-width: 1200px; }
+.contain-dskh-qltc .table-main{ min-width: 800px; }
+.contain-dskh-lkh .table-main{ min-width: 800px; }
+.contain-cd-qlnd .table-main{ min-width: 800px; }
+.contain-dv-km .table-main{ min-width: 1200px; }
+.contain-smsgtn-chgt .table-main{ min-width: 800px; }
+.contain-sms-gtn .table-main{ min-width: 800px; }
+.table-main{ min-width: 800px; }
+.table-main{ min-width: 800px; }
+.table-main{ min-width: 800px; }
+.table-main{ min-width: 800px; }
+/** End **/
 
 @media only screen and (max-width: 1024px) {
     .hidden-mobile{ display: none; }
