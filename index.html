@@ -15,6 +15,11 @@
         <link rel="stylesheet" href="templates/AdminLTE/bower_components/font-awesome/css/font-awesome.min.css">
         <!-- Ionicons -->
         <link rel="stylesheet" href="templates/AdminLTE/bower_components/Ionicons/css/ionicons.min.css">
+
+        <!-- CSS JOIN -->
+        <link rel="stylesheet" href="templates/AdminLTE/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <!-- END -->
+        
         <!-- Theme style -->
         <link rel="stylesheet" href="templates/AdminLTE/dist/css/AdminLTE.min.css">
         <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
@@ -30,11 +35,13 @@
         <!-- Toas plugin -->
         <link rel="stylesheet" href="plugins/jquery-toast-plugin-master/dist/jquery.toast.min.css">
         <!-- End -->
+
         <!-- Google Font -->
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,400italic,700' rel='stylesheet' type='text/css' />
         <link rel="stylesheet" href="css/global-style.css">
+        <link rel="stylesheet" href="css/response.css">
     </head>
     <!--
         BODY TAG OPTIONS:
@@ -257,102 +264,102 @@
                         <li class="header">QUẢN LÝ</li>
                         <!-- Optionally, you can add icons to the links -->
                         <li class="active treeview">
-                            <a href="#"><i class="fa fa-link"></i> <span>QUẢN LÝ KHÁCH HÀNG</span>
+                            <a href="#"><i class="fa fa-address-book-o"></i> <span>QUẢN LÝ KHÁCH HÀNG</span>
                             <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                             </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-address-book-o"></i> Tiếp đón</a></li>
-                                <li><a href="#"><i class="fa fa-address-book-o"></i> Danh sách khách hàng</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Tiếp đón</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Danh sách khách hàng</a></li>
                                 <li class="treeview">
                                     <a href="#">
-                                        <i class="fa fa-address-book-o"></i> Quản lý loại khách hàng
+                                        <i class="fa fa-link"></i> Quản lý loại khách hàng
                                         <span class="pull-right-container">
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </span>
                                     </a>
                                     <ul class="treeview-menu">
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Danh sách loại khách hàng</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Quản lý tiêu chí khách hàng</a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i> Danh sách loại khách hàng</a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i> Quản lý tiêu chí khách hàng</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#"><i class="fa fa-address-book-o"></i> Danh sách khách hàng trị liệu</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Danh sách khách hàng trị liệu</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
-                            <a href="#"><i class="fa fa-link"></i> <span>QUẢN LÝ TIN NHẮN</span>
+                            <a href="#"><i class="fa fa-envelope-o"></i> <span>QUẢN LÝ TIN NHẮN</span>
                             <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                             </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#">Gửi tin nhắn</a></li>
-                                <li><a href="#">Gửi tin nhắn tùy biến</a></li>
-                                <li><a href="#">Gửi tin cho khách hàng trị liệu kế tiếp</a></li>
-                                <li><a href="#">Gửi tin nhắn học viên</a></li>
-                                <li><a href="#">Tin nhắn mẫu</a></li>
-                                <li><a href="#">Lịch sử tin nhắn</a></li>
-                                <li><a href="#">Cấu hình gửi tin</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Gửi tin nhắn</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Gửi tin nhắn tùy biến</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Gửi tin cho khách hàng trị liệu kế tiếp</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Gửi tin nhắn học viên</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Tin nhắn mẫu</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Lịch sử tin nhắn</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Cấu hình gửi tin</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
-                            <a href="#"><i class="fa fa-link"></i> <span>DỊCH VỤ</span>
+                            <a href="#"><i class="fa fa-gift"></i> <span>DỊCH VỤ</span>
                             <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                             </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#">Nhóm dịch vụ</a></li>
-                                <li><a href="#">Chi tiết dịch vụ</a></li>
-                                <li><a href="#">Khuyến mãi</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Nhóm dịch vụ</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Chi tiết dịch vụ</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Khuyến mãi</a></li>
                             </ul>
                         </li>
                         <li class="header">THỐNG KÊ & CÀI ĐẶT</li>
                         <li class="treeview">
-                            <a href="#"><i class="fa fa-link"></i> <span>THỐNG KÊ</span>
+                            <a href="#"><i class="fa fa-bar-chart"></i> <span>THỐNG KÊ</span>
                             <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                             </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#">Lịch sử phiếu mua</a></li>
-                                <li><a href="#">Thống kê khách hàng theo dịch vụ</a></li>
-                                <li><a href="#">Thống kê nhân viên làm dịch vụ</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Lịch sử phiếu mua</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Thống kê khách hàng theo dịch vụ</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Thống kê nhân viên làm dịch vụ</a></li>
                             </ul>
                         </li>
                         <li class="treeview">
-                            <a href="#"><i class="fa fa-link"></i> <span>CÀI ĐẶT</span>
+                            <a href="#"><i class="fa fa-cogs"></i> <span>CÀI ĐẶT</span>
                             <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                             </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-address-book-o"></i> Hồ sơ SPA</a></li>
-                                <li><a href="#"><i class="fa fa-address-book-o"></i> Quản lý người dùng</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Hồ sơ SPA</a></li>
+                                <li><a href="#"><i class="fa fa-link"></i> Quản lý người dùng</a></li>
                                 <li class="treeview">
                                     <a href="#">
-                                        <i class="fa fa-address-book-o"></i> Quản lý chi nhánh
+                                        <i class="fa fa-link"></i> Quản lý chi nhánh
                                         <span class="pull-right-container">
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </span>
                                     </a>
                                     <ul class="treeview-menu">
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Danh sách chi nhánh</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Cấp tin chi nhánh</a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i> Danh sách chi nhánh</a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i> Cấp tin chi nhánh</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#"><i class="fa fa-address-book-o"></i> Quản lý nhân viên</a></li>
                                 <li class="treeview">
                                     <a href="#">
-                                        <i class="fa fa-address-book-o"></i> Đào tạo
+                                        <i class="fa fa-link"></i> Đào tạo
                                         <span class="pull-right-container">
                                             <i class="fa fa-angle-left pull-right"></i>
                                         </span>
                                     </a>
                                     <ul class="treeview-menu">
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Quản lý lớp học</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Quản lý học viên</a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i> Quản lý lớp học</a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i> Quản lý học viên</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -367,21 +374,434 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Page Header
-                        <small>Optional description</small>
+                        Danh sách
+                        <small>Danh sách khách hàng</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-                        <li class="active">Here</li>
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Quản lý khách hàng</a></li>
+                        <li class="active">Danh sách khách hàng</li>
                     </ol>
                 </section>
                 <!-- Main content -->
-                <section class="content container-fluid">
-                    <!--------------------------
-                        | Your Page Content Here |
-                        -------------------------->
+                <section class="content container-fluid contain-main contain-dskh">
+                    <div class="box box-primary color-palette-box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Lọc danh sách khách hàng</span></h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Nhập tên khách hàng">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-address-card"></i>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Nhập mã khách hàng">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-map-marker"></i>
+                                            </div>
+                                            <select class="form-control">
+                                                <option disabled="">Chọn spa</option>
+                                                <option value="1">Spa Hoàng Quốc Việt</option>
+                                            </select>
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <button class="btn btn-primary btn-sm "><i class="fa fa-search"></i> Tìm kiếm</button>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <div class="box box-primary color-palette-box">
+                        <div class="box-header with-border box-header-main">
+                            <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách khách hàng</span></h3>
+                            <div class="pull-right box-list-head">
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-success pull-left btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square"></i> Thêm mới</a>
+                                </div>
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-danger pull-left btn-sm"><i class="fa fa-trash-o"></i> Xóa</a>
+                                </div>
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-download"></i> Import Excel</a>
+                                </div>
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-upload"></i> Export Excel</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-body table-responsive no-padding">
+                            <table class="table table-hover table-bordered table-condensed table-content table-main">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </th>
+                                        <th>STT</th>
+                                        <th>Tên KH</th>
+                                        <th>Ngày sinh</th>
+                                        <th>Giới tính</th>
+                                        <th>SDT</th>
+                                        <th>Email</th>
+                                        <th>Địa chỉ</th>
+                                        <th>Ghi chú</th>
+                                        <th>Control</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td><p class="content-inline">11-7-2014</p></td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td><p class="content-inline">11-7-2014</p></td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td><p class="content-inline">11-7-2014</p></td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td>11-7-2014</td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td>11-7-2014</td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td>11-7-2014</td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td>11-7-2014</td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td>11-7-2014</td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="checkcontainer">
+                                                <input type="checkbox" checked="checked">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>183</td>
+                                        <td><span class="label label-success">Ngô Bá Thế</span></td>
+                                        <td>11-7-2014</td>
+                                        <td>Nam</td>
+                                        <th>0985135999</th>
+                                        <th>bathe0603it@gmail.com</th>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                        <th>
+                                            <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-info"></i> Thông tin</button>
+                                                <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
+                                            </section>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                            <section class="d-flex justify-content-between box-footer-main">
+                                <div class="box-select-pagination">
+                                    <div class="form-inline">
+                                        <label>Số bản ghi/Trang: </label>&nbsp
+                                        <select class="form-control">
+                                            <option value="">20 bản ghi</option>
+                                            <option value="">30 bản ghi</option>
+                                            <option value="">50 bản ghi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="box-pagination">
+                                    <div class="pagination">
+                                        <a href="#">&laquo;</a>
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">&raquo;</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- /.box-footer -->
+                    </div>
                 </section>
                 <!-- /.content -->
+            </div>
+            <div class="render">
+                <form class="form-horizontal" action="">
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">USSD SPA - THÊM MỚI KHÁCH HÀNG</h4>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="email">Chi nhánh:</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" id="email" placeholder="Chi nhánh">
+                                                    <option value="">Hoàng Quốc Việt</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Loại khách hàng:</label>
+                                            <div class="col-sm-9"> 
+                                                <select class="form-control" id="email" placeholder="Loại khách hàng">
+                                                    <option value="">Loại khách hàng 1</option>
+                                                    <option value="">Loại khách hàng 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Mã khách hàng:</label>
+                                            <div class="col-sm-9"> 
+                                                <input type="text" class="form-control" id="pwd" placeholder="" disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Tên khách hàng:</label>
+                                            <div class="col-sm-9"> 
+                                                <input type="text" class="form-control" id="pwd" placeholder="Tên khách hàng">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Ngày sinh:</label>
+                                            <div class="col-sm-4"> 
+                                                <div class="input-group date">
+                                                    <div class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control pull-right" id="datepicker">
+                                                </div>
+                                            </div>
+                                            <label class="control-label col-sm-2 col-md-2" for="pwd">Giới tính:</label>
+                                            <div class="col-sm-3"> 
+                                                <select class="form-control" id="email" placeholder="Loại khách hàng">
+                                                    <option value="">Nam</option>
+                                                    <option value="">Nữ</option>
+                                                    <option value="">Giới tính khác</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Số ĐT:</label>
+                                            <div class="col-sm-9"> 
+                                                <input type="text" class="form-control" id="pwd" placeholder="Số ĐT">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Email:</label>
+                                            <div class="col-sm-9"> 
+                                                <input type="text" class="form-control" id="pwd" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Địa chỉ:</label>
+                                            <div class="col-sm-9"> 
+                                                <input type="text" class="form-control" id="pwd" placeholder="Địa chỉ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3" for="pwd">Ghi chú:</label>
+                                            <div class="col-sm-9"> 
+                                                <textarea class="form-control" id="pwd"></textarea>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-plus"></i>&nbspThêm</button>
+                                    <button type="reset" class="btn btn-warning"><i class="fa fa-refresh"></i>&nbspNhập lại</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>&nbspClose</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
             <!-- /.content-wrapper -->
             <!-- Main Footer -->
@@ -486,49 +906,19 @@
         <script src="templates/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- AdminLTE App -->
         <script src="templates/AdminLTE/dist/js/adminlte.min.js"></script>
-        <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-        
+        <script src="templates/AdminLTE/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
         <script src="plugins/jquery-toast-plugin-master/dist/jquery.toast.min.js"></script>
-        <!-- Optionally, you can add Slimscroll and FastClick plugins.
-            Both of these plugins are recommended to enhance the
-            user experience. -->
+
+        <script src="js/function.js"></script>
+        <!-- JS JOIN -->
+        <script src="templates/AdminLTE/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <!-- END -->
         <script type="text/javascript">
-            function show_toast_success(){
-                $.toast({
-                    heading: 'Success',
-                    text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
-                    showHideTransition: 'slide',
-                    position: 'top-right',
-                    icon: 'success'
-                })
-            }
-            function show_toast_errors(){
-                $.toast({
-                    heading: 'Error',
-                    text: 'Report any <a href="https://github.com/kamranahmedse/jquery-toast-plugin/issues">issues</a>',
-                    showHideTransition: 'fade',
-                    position: 'top-right',
-                    icon: 'error'
-                })
-            }
-            function show_toast_warning(){
-                $.toast({
-                    heading: 'Warning',
-                    text: 'It is going to be supper easy for you to use ;)',
-                    showHideTransition: 'plain',
-                    position: 'top-right',
-                    icon: 'warning'
-                })
-            }
-            function show_toast_info(){
-                $.toast({
-                    heading: 'Information',
-                    text: 'Now you can add icons to generate different kinds of toasts',
-                    showHideTransition: 'slide',
-                    position: 'top-right',
-                    icon: 'info'
-                })
-            }
+            //Date picker
+            $('#datepicker').datepicker({
+                autoclose: true,
+                format: 'dd-mm-yyyy'
+            })
         </script>
     </body>
 </html>
