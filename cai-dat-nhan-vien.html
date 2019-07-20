@@ -355,23 +355,23 @@
                 <section class="content-header">
                     <h1>
                         Cài đặt
-                        <small>Quản lý quỹ tin chi nhánh</small>
+                        <small>Quản lý người dùng</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
                         <li><a href="#"><i class="fa fa-dashboard"></i> Cài đặt</a></li>
-                        <li class="active">Quản lý quỹ tin chi nhánh</li>
+                        <li class="active">Quản lý người dùng</li>
                     </ol>
                 </section>
                 <!-- Main content -->
                 <section class="content container-fluid contain-main contain-cd-qlnd">
                     <div class="box box-primary color-palette-box">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Quỹ tin</span></h3>
+                            <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Lọc nhân viên</span></h3>
                         </div>
                         <div class="box-body">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-3 col-sm-6 col-xs-12">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
@@ -385,8 +385,30 @@
                                         <!-- /.input group -->
                                     </div>
                                 </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-barcode"></i>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Nhập mã nhân viên">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Nhập tên nhân viên">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
                                 <div class="col-md-3">
-                                    <p style="font-weight: bold;">Chú ý: <label class="content-red">Dòng có màu đỏ là trụ sở chính</label></p>
+                                    <button class="btn btn-primary btn-sm "><i class="fa fa-search"></i> Tìm kiếm</button>
                                 </div>
                             </div>
                             <!-- /.row -->
@@ -395,7 +417,21 @@
                     </div>
                     <div class="box box-primary color-palette-box">
                         <div class="box-header with-border box-header-main">
-                            <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách chi nhánh</span></h3>
+                            <h3 class="box-title"><i class="fa fa-list-ul"></i> <span>Danh sách khách hàng</span></h3>
+                            <div class="pull-right box-list-head">
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-success pull-left btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-square"></i> Thêm mới</a>
+                                </div>
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-danger pull-left btn-sm"><i class="fa fa-trash-o"></i> Xóa</a>
+                                </div>
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-download"></i> Import Excel</a>
+                                </div>
+                                <div class="minibox">
+                                    <a href="#" class="btn btn-info pull-left btn-sm"><i class="fa fa-upload"></i> Export Excel</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="box-body table-responsive no-padding">
                             <table class="table table-hover table-bordered table-condensed table-content">
@@ -408,16 +444,13 @@
                                             </label>
                                         </th>
                                         <th>STT</th>
-                                        <th>Tên chi nhánh</th>
-                                        <th>Người đại diện</th>
-                                        <th>Ngày thành lập</th>
-                                        <th>SĐT</th>
+                                        <th>Tên đăng nhập</th>
+                                        <th>Tên hiển thị</th>
+                                        <th>Số điện thoại</th>
                                         <th>Email</th>
-                                        <th>Website</th>
                                         <th>Địa chỉ</th>
-                                        <th>Tổng cấp</th>
-                                        <th>Tổng đã sử dụng</th>
-                                        <th>Tổng còn</th>
+                                        <th>Facebook</th>
+                                        <th>Loại tài khoản</th>
                                         <th>Control</th>
                                     </tr>
                                 </thead>
@@ -430,18 +463,16 @@
                                             </label>
                                         </td>
                                         <td>183</td>
-                                        <td><span class="label label-success">HQV</span></td>
+                                        <td><span class="label label-success">Chuong BP</span></td>
                                         <td>Chương Bùi</td>
-                                        <th>11-11-2011</th>
-                                        <th>0888888888</th>
+                                        <th>0985135999</th>
                                         <th>bathe0603it@gmail.com</th>
-                                        <th></th>
-                                        <td>Quan cau giay</td>
-                                        <td>10</td>
-                                        <td>2</td>
-                                        <td>8</td>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Chương bp</td>
+                                        <td>Hệ thống</td>
                                         <th>
                                             <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-unlock-alt"></i> Phân quyền</button>
                                                 <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
                                             </section>
                                         </th>
@@ -454,18 +485,16 @@
                                             </label>
                                         </td>
                                         <td>183</td>
-                                        <td><span class="label label-success">HQV</span></td>
+                                        <td><span class="label label-success">Chuong BP</span></td>
                                         <td>Chương Bùi</td>
-                                        <th>11-11-2011</th>
-                                        <th>0888888888</th>
+                                        <th>0985135999</th>
                                         <th>bathe0603it@gmail.com</th>
-                                        <th></th>
-                                        <td>Quan cau giay</td>
-                                        <td>10</td>
-                                        <td>2</td>
-                                        <td>8</td>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Chương bp</td>
+                                        <td>Hệ thống</td>
                                         <th>
                                             <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-unlock-alt"></i> Phân quyền</button>
                                                 <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
                                             </section>
                                         </th>
@@ -478,18 +507,16 @@
                                             </label>
                                         </td>
                                         <td>183</td>
-                                        <td><span class="label label-success">HQV</span></td>
+                                        <td><span class="label label-success">Chuong BP</span></td>
                                         <td>Chương Bùi</td>
-                                        <th>11-11-2011</th>
-                                        <th>0888888888</th>
+                                        <th>0985135999</th>
                                         <th>bathe0603it@gmail.com</th>
-                                        <th></th>
-                                        <td>Quan cau giay</td>
-                                        <td>10</td>
-                                        <td>2</td>
-                                        <td>8</td>
+                                        <th>152 Phó Đức Chính - Ba Đình - Hà Nội</th>
+                                        <td>Chương bp</td>
+                                        <td>Hệ thống</td>
                                         <th>
                                             <section class="list-control-button">
+                                                <button class="btn btn-info btn-sm"><i class="fa fa-unlock-alt"></i> Phân quyền</button>
                                                 <button class="btn btn-warning btn-sm"><i class="fa fa-pencil-square-o"></i> Chỉnh sửa</button>
                                             </section>
                                         </th>
@@ -537,13 +564,13 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">USSD SPA - THÊM MỚI CHI NHÁNH</h4>
+                                    <h4 class="modal-title">USSD SPA - THÊM MỚI KHÁCH HÀNG</h4>
                                 </div>
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="email">Tên chi nhánh <i class="content-red">(*)</i>:</label>
+                                                <label class="control-label col-sm-4 col-xs-5" for="email">Tên đăng nhập <i class="content-red">(*)</i>:</label>
                                                 <div class="col-sm-8 col-xs-7">
                                                     <input type="" name="" class="form-control" placeholder="">
                                                 </div>
@@ -551,18 +578,15 @@
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Đăng ký SMS:</label>
+                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Số điện thoại <i class="content-red">(*)</i>:</label>
                                                 <div class="col-sm-8 col-xs-7"> 
-                                                    <label class="checkcontainer">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label><br>
+                                                    <input type="" name="" class="form-control" placeholder="">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="email">Địa chỉ:</label>
+                                                <label class="control-label col-sm-4 col-xs-5" for="email">Mật khẩu <i class="content-red">(*)</i>:</label>
                                                 <div class="col-sm-8 col-xs-7">
                                                     <input type="" name="" class="form-control" placeholder="">
                                                 </div>
@@ -570,7 +594,7 @@
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Người đại diện:</label>
+                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Email:</label>
                                                 <div class="col-sm-8 col-xs-7"> 
                                                     <input type="" name="" class="form-control" placeholder="">
                                                 </div>
@@ -578,7 +602,7 @@
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="email">SĐT:</label>
+                                                <label class="control-label col-sm-4 col-xs-5" for="email">Tên hiển thị:</label>
                                                 <div class="col-sm-8 col-xs-7">
                                                     <input type="" name="" class="form-control" placeholder="">
                                                 </div>
@@ -586,25 +610,16 @@
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Ngày thành lập:</label>
+                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Địa chỉ:</label>
                                                 <div class="col-sm-8 col-xs-7"> 
-                                                    <input type="" name="" class="form-control" placeholder="" id="datepicker">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="email">Email:</label>
-                                                <div class="col-sm-8 col-xs-7">
                                                     <input type="" name="" class="form-control" placeholder="">
-                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Trạng thái:</label>
-                                                <div class="col-sm-8 col-xs-7"> 
+                                                <label class="control-label col-sm-4 col-xs-5" for="email">Loại tài khoản <i class="content-red">(*)</i>:</label>
+                                                <div class="col-sm-8 col-xs-7">
                                                     <select class="form-control" id="email" placeholder="Chi nhánh">
                                                         <option value="">TK1</option>
                                                     </select>
@@ -613,9 +628,30 @@
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <label class="control-label col-sm-4 col-xs-5" for="email">Website:</label>
-                                                <div class="col-sm-8 col-xs-7">
+                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Facebook:</label>
+                                                <div class="col-sm-8 col-xs-7"> 
                                                     <input type="" name="" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-4 col-xs-5" for="email">Chi nhánh:</label>
+                                                <div class="col-sm-8 col-xs-7">
+                                                    <select class="form-control" id="email" placeholder="Chi nhánh">
+                                                        <option value="">Hoàng Quốc Việt</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-4 col-xs-5" for="pwd">Nhóm quyền:</label>
+                                                <div class="col-sm-8 col-xs-7"> 
+                                                    <select class="form-control" id="email" placeholder="Loại khách hàng">
+                                                        <option value="">Nhom quyen 1</option>
+                                                        <option value="">Nhom quyen 2</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
