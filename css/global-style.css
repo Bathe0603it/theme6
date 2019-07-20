@@ -146,7 +146,7 @@ iframe{ border: none; }
 .skin-blue .main-header .logo{ background: none; }
 .treeview-menu>li a{ white-space: nowrap; }
 .jq-toast-wrap{ width: 320px; }
-.login-page{ background: url('https://images.wallpaperscraft.com/image/ocean_coast_aerial_view_131524_1920x1080.jpg');background-size: cover; }
+.login-page{ background: url('../images/ocean_coast_aerial_view_131524_1920x1080.jpg');background-size: cover; }
 .login-logo{ font-size: 40px; }
 .login-logo a{ color: #1e4846; }
 .box-header>.fa span, .box-header>.glyphicon span, .box-header>.ion span, .box-header .box-title span{ margin-left: 5px; }
