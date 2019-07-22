@@ -141,6 +141,7 @@
 iframe{ border: none; }
 .cpn-iframe{  }
 .cpn-iframe .content-wrapper{ margin-left: 0px; }
+.info-box-text{ white-space: normal; }
 /*.modal-max .modal-dialog{ width: 95%; }*/
 .content-header>h1>small{ font-weight: 500; }
 .main-header{ box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);background-color: #4fb8e2; }
