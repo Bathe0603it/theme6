@@ -152,6 +152,8 @@ iframe{ border: none; }
 .customer-scroll::-webkit-scrollbar-track{ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #87CEEB; }
 .row-flex{ display: flex;flex-wrap: wrap; }
 .col-md-6-flex{ width: 50%;padding: 0px 7px; }
+.col-md-9-flex{ width: 75%;padding: 0px 7px; }
+.col-md-3-flex{ width: 25%;padding: 0px 7px; }
 
 /** Style page **/
 .content-header>h1>small{ font-weight: 500; }
@@ -209,8 +211,9 @@ iframe{ border: none; }
     }
 }
 .box-customer-support{ max-height: 300px;overflow-y: scroll; }
-.box-raw{ display: flex;justify-content: flex-start;flex-wrap: wrap; }
+.box-raw{ display: flex;justify-content: flex-start;flex-wrap: wrap;height: 100%;flex-direction: column;justify-content: flex-end; }
 .box-raw-cpn{ margin-bottom: 7px;width: 100%; }
+.box-raw-cpn:last-child{ margin-bottom: 0px; }
 
 /** Sigle form **/
 .contain-main{  }

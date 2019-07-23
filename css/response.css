@@ -8,6 +8,8 @@
 
 @media only screen and (max-width: 1024px) {
 	.col-md-6-flex{ width: 100%;margin-bottom: 10px; }
+	.col-md-9-flex{ width: 100%;margin-bottom: 10px; }
+	.col-md-3-flex{ width: 100%;margin-bottom: 10px; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -15,6 +17,7 @@
 }
  
 @media only screen and (max-width: 992px) {
+	.box-raw{ flex-direction: row; }
 	.box-raw .box-raw-cpn{ width: auto;margin-right: 8px; }
 	.box-raw .box-raw-cpn:last-child{ margin-right: 0px; }
 }
