@@ -7,7 +7,22 @@ $(document).ready(function(){
     if (screen.width >= 768 && screen.width < 900) {
         $('.sidebar-mini').addClass('sidebar-collapse');
     }
+
+    /*$('.day').on('click', function(){
+        alert('hello');
+    });
+    */
 });
+var classname = document.getElementsByClassName("day");
+var myFunction = function() {
+    var attribute = this.getAttribute("data-date");
+    alert(attribute);
+};
+
+for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', myFunction, false);
+}
+
 function show_toast_success(){
     $.toast({
         heading: 'Success',

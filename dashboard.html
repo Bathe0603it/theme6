@@ -258,21 +258,14 @@
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
-                    <!-- search form (Optional) -->
-                    <form action="#" method="get" class="sidebar-form">
-                        <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Search...">
-                            <span class="input-group-btn">
-                            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                            </button>
-                            </span>
-                        </div>
-                    </form>
-                    <!-- /.search form -->
                     <!-- Sidebar Menu -->
                     <ul class="sidebar-menu" data-widget="tree">
                         <li class="header">QUẢN LÝ</li>
                         <!-- Optionally, you can add icons to the links -->
+                        <li class="">
+                            <a href="#"><i class="fa fa-dashboard"></i> <span>DASHBOARD</span>
+                            </a>
+                        </li>
                         <li class="active treeview">
                             <a href="#"><i class="fa fa-address-book-o"></i> <span>QUẢN LÝ KHÁCH HÀNG</span>
                             <span class="pull-right-container">
@@ -726,7 +719,7 @@
                             </div>
                             <!-- /.box -->
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6"> 
                             <div class="box box-solid bg-blue-gradient">
                                 <div class="box-header">
                                     <i class="fa fa-calendar"></i>
@@ -762,35 +755,35 @@
                                         <div class="col-sm-6">
                                             <!-- Progress bars -->
                                             <div class="clearfix">
-                                                <span class="pull-left">Task #1</span>
-                                                <small class="pull-right">90%</small>
+                                                <span class="pull-left">Ngày</span>
+                                                <small class="pull-right task-setup-1">20-11-2019</small>
                                             </div>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
+                                                <div class="progress-bar progress-bar-green" style="width: 100%;"></div>
                                             </div>
                                             <div class="clearfix">
-                                                <span class="pull-left">Task #2</span>
-                                                <small class="pull-right">70%</small>
+                                                <span class="pull-left">Nhân viên xuất sắc nhất</span>
+                                                <small class="pull-right task-setup-2">Nguyen Van An</small>
                                             </div>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
+                                                <div class="progress-bar progress-bar-green" style="width: 100%;"></div>
                                             </div>
                                         </div>
                                         <!-- /.col -->
                                         <div class="col-sm-6">
                                             <div class="clearfix">
-                                                <span class="pull-left">Task #3</span>
-                                                <small class="pull-right">60%</small>
+                                                <span class="pull-left">Doanh thu</span>
+                                                <small class="pull-right task-setup-3">60.000.000</small>
                                             </div>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
+                                                <div class="progress-bar progress-bar-green" style="width: 100%;"></div>
                                             </div>
                                             <div class="clearfix">
-                                                <span class="pull-left">Task #4</span>
-                                                <small class="pull-right">40%</small>
+                                                <span class="pull-left">Số khách hàng được phục vụ</span>
+                                                <small class="pull-right task-setup-4">40</small>
                                             </div>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
+                                                <div class="progress-bar progress-bar-green" style="width: 100%;"></div>
                                             </div>
                                         </div>
                                         <!-- /.col -->
@@ -1331,7 +1324,32 @@
         </script>
         <script type="text/javascript">
             // The Calender
-            $('#calendar').datepicker();
+            $('#calendar').datepicker({
+                format: "dd-mm-yyyy",
+            }).change(dateChanged).on('changeDate', dateChanged);
+
+            function dateChanged(ev) {
+                //console.log(ev);
+                //console.log(ev.date.valueOf());
+
+                var newDate = new Date(ev.date);
+                var month = (newDate.getMonth() + 1);
+                var day = (newDate.getDate());
+                var year = (newDate.getFullYear());
+
+                $('.task-setup-1').text(day+"-"+month+"-"+year);
+                $('.task-setup-2').text(Math.random(1, 100));
+                $('.task-setup-3').text(Math.random(1, 100));
+                $('.task-setup-4').text(Math.random(1, 100));
+
+                console.log(day+"-"+month+"-"+year);
+                /*$(this).datepicker('hide');
+                if ($('#startdate').val() != '' && $('#enddate').val() != '') {
+                    $('#period').text(diffInDays() + ' d.');
+                } else {
+                    $('#period').text("-");
+                }*/
+            }
         </script>
         <!-- Optionally, you can add Slimscroll and FastClick plugins.
             Both of these plugins are recommended to enhance the
