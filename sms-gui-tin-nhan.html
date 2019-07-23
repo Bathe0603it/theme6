@@ -392,8 +392,8 @@
                             <h3 class="box-title"><i class="fa fa-filter"></i> <span class="">Lọc danh sách khách hàng và gửi sms</span></h3>
                         </div>
                         <div class="box-body">
-                            <div class="row">
-                                <div class="col-md-6">
+                            <div class="row-flex">
+                                <div class="col-md-6-flex">
                                     <section class="box-search-section">
                                         <h4 class="title">
                                             <i class="gg-col fa fa-magic text-muted fa-lg padding-right" aria-hidden="true"></i>
@@ -507,7 +507,7 @@
                                         </div>
                                     </section>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6-flex">
                                     <section class="box-search-section">
                                         <h4 class="title">
                                             <i class="gg-col fa fa-cogs text-muted fa-lg padding-right" aria-hidden="true"></i>
@@ -523,7 +523,7 @@
                                                                 <i class="fa fa-inbox"></i>
                                                             </div>
                                                             <select class="form-control">
-                                                                <option disabled="">Chọn mẫu tin</option>
+                                                                <option disabled="" selected="">Chọn mẫu tin</option>
                                                                 <option value="1">Mẫu tin 1</option>
                                                                 <option value="1">Mẫu tin 2</option>
                                                             </select>
@@ -532,15 +532,31 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                                    <div class="form-group">
-                                                        <div class="input-group">
-                                                            <div class="input-group-addon">
-                                                                <i class="fa fa-commenting-o"></i>
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-sm-12">
+                                                            <div class="form-group">
+                                                                <p class="text-left">Nội dung tin nhắn (<b class="content-red">3</b> ký tự) (1/2 tin)</p>
+                                                                <div class="input-group">
+                                                                    <div class="input-group-addon">
+                                                                        <i class="fa fa-commenting-o"></i>
+                                                                    </div>
+                                                                    <textarea class="form-control" placeholder="Nhập mẫu tin tại đây"></textarea>
+                                                                </div>
+                                                                <!-- /.input group -->
                                                             </div>
-                                                            <textarea class="form-control" placeholder="Nhập mẫu tin tại đây"></textarea>
                                                         </div>
-                                                        <p class="text-right">Nội dung tin nhắn (<b class="content-red">3</b> ký tự) (1/2 tin)</p>
-                                                        <!-- /.input group -->
+                                                        <div class="col-md-3 col-sm-12">
+                                                            <div class="form-group">
+                                                                <div class="box-raw">
+                                                                    <div class="box-raw-cpn">
+                                                                        <button class="btn btn-primary btn-sm"><i class="fa fa-clipboard"></i> Copy</button>
+                                                                    </div>
+                                                                    <div class="box-raw-cpn">
+                                                                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -582,12 +598,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <button class="btn btn-primary btn-sm"><i class="fa fa-clipboard"></i> Copy</button>
-                                                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i> Delete</button>
                                                 </div>
                                             </div>
                                         </div>
